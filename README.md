@@ -80,38 +80,6 @@ Experience smooth productivity anywhere.
 - Dynamic task cards
 
 ---
-
-# 🛠️ Tech Stack
-
-| Technology | Usage |
-|---|---|
-| HTML5 | Structure |
-| CSS3 | Styling & animations |
-| JavaScript | App functionality |
-
----
-
-# 📸 Preview
-
-## Dashboard Experience
-(Add screenshots here)
-
----
-
-# 🚀 Future Upgrades
-
-Planned premium features:
-- Cloud sync
-- User authentication
-- AI productivity insights
-- Calendar integration
-- Pomodoro focus mode
-- Drag & drop tasks
-- Team collaboration
-- Light/Dark themes
-
----
-
 # 📂 Project Structure
 
 ```bash
@@ -283,6 +251,3 @@ If you like this project:
 > “Productivity should feel beautiful, not stressful.”
 
 — Zenith Pro
-
-```
-```
