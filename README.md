@@ -201,8 +201,9 @@ Open `index.html` in your browser.
 
 # 🌍 Live Demo
 
-[
-](https://zenith-pro-to-do-list-app.onrender.com)
+Explore the application live here:
+[**Launch Zenith Pro App 🚀**](https://zenith-pro-to-do-list-app.onrender.com)
+
 ---
 
 # 🎨 Design Inspiration
