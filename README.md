@@ -17,7 +17,6 @@ It is a luxury productivity workspace designed with:
 
 Built with a modern glassmorphism-inspired UI and premium motion effects, Zenith Pro transforms everyday task management into a visually satisfying experience.
 
----
 
 # ✨ Core Features
 
