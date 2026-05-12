@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>To Do List Pro | Always Dark Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+
+<body class="dark-theme">
+
+    <div class="desktop-layout">
+        <aside class="sidebar">
+            <div class="logo">Zenith<span>PRO</span></div>
+            <nav class="side-nav">
+                <button class="side-pill active" onclick="filterByCategory('All')">📂 All Tasks</button>
+                <button class="side-pill" onclick="filterByCategory('Work')">💼 Work Focus</button>
+                <button class="side-pill" onclick="filterByCategory('Personal')">🏠 Home Life</button>
+                <button class="side-pill" onclick="filterByCategory('Urgent')">🔥 Urgent Only</button>
+            </nav>
+            <div class="side-stats">
+                <p>Task Completion</p>
+                <div class="progress-container">
+                    <div class="progress-bar" id="sidebarProgress"></div>
+                </div>
+                <small id="sidebarStatText">0/0 Completed</small>
+            </div>
+        </aside>
+
+        <div class="app-shell">
+            <header class="main-header">
+                <div class="user-info">
+                    <span>Target Locked,</span>
+                    <h2>Master Planner</h2>
+                </div>
+                <div class="header-stats-circle">
+                    <svg viewBox="0 0 36 36" class="circular-chart">
+                        <path class="circle-bg"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path id="progressCircle" class="circle" stroke-dasharray="0, 100"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    </svg>
+                    <span id="completionRate">0%</span>
+                </div>
+            </header>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search tasks..." oninput="searchTasks()">
+            </div>
+
+            <div class="category-pills mobile-only">
+                <button class="pill active" onclick="filterByCategory('All')">All</button>
+                <button class="pill" onclick="filterByCategory('Work')">Work</button>
+                <button class="pill" onclick="filterByCategory('Personal')">Home</button>
+                <button class="pill" onclick="filterByCategory('Urgent')">Urgent</button>
+            </div>
+
+            <main class="task-container">
+                <ul id="taskList"></ul>
+            </main>
+
+            <div class="bottom-bar">
+                <input type="text" id="taskInput" placeholder="Add a new challenge...">
+                <select id="categorySelect">
+                    <option value="Work">Work</option>
+                    <option value="Personal">Home</option>
+                    <option value="Urgent">Urgent</option>
+                </select>
+                <button class="fab" onclick="addTask()">+</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
